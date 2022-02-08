@@ -67,11 +67,11 @@ typings/
 # # nuxt.js build output
 # .nuxt
 
-# # vuepress build output
-# .vuepress/dist
+# vuepress build output
+.vuepress/dist
 
-# # Serverless directories
-# .serverless
+# Serverless directories
+.serverless
 
-# # FuseBox cache
-# .fusebox/
+# FuseBox cache
+.fusebox/
