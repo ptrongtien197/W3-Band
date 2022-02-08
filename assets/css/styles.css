@@ -9,6 +9,7 @@ html {
     font-family: Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
+
 /* work 
 1. Tu ngoai vao trong
 2. Tu tren xuong duoi
@@ -181,7 +182,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url("/assets/img/slider/slider1.jpg") top center / cover no-repeat;
+    background: url("../img/slider/slider1.jpg") top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -211,9 +212,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0px 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .content-section .section-heading {
