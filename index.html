@@ -7,6 +7,7 @@
     <title>THE BAND</title>
     <link rel="icon" href="./assets/img/icon/icon1.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -35,6 +36,9 @@
             <!-- Begin: Search button-->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- End: Search button-->
         </div>
@@ -226,6 +230,29 @@
 
         modalClose.addEventListener('click',hideBuyTickets)
         modal.addEventListener('click',hideBuyTickets)
+
+        // Mobile Menu open/close menu
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function() {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose){
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // auto close onlick menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i=0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }
     </script>
 </body>
 </html>
