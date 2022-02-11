@@ -1,8 +1,6 @@
 /* PC */
 @media (min-width: 1024px) {
-    .pc {
-        
-    }
+
 }
 
 /* Tablet */
@@ -14,11 +12,19 @@
 
 /* mobile */
 @media (max-width: 740px) {
+    #nav {
+        display: block;
+    }
+
     #nav > li {
         display: block;
     }
 
     #header .search-btn {
         display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
     }
 }

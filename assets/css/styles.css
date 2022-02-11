@@ -161,6 +161,14 @@ html {
 #nav .nav-arrow-down {
     font-size: 14px;
 }
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
